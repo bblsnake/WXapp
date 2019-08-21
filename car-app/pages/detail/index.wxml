@@ -1,0 +1,4 @@
+<!--pages/detail/index.wxml-->
+<view>
+  <view wx:for="{{cart}}"></view>
+</view>
