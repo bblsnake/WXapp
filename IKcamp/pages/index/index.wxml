@@ -6,7 +6,7 @@
       <view class="group-title {{group.formateData === '今日'?'on':''}}">{{group.formateData}}</view>
     </view>
     <view class="group-content">
-      <view class="group-content-item" wx:for="{{group.articles}}" wx:for-item="item" wx:key="{{item.contentId}}">
+      <view class="group-content-item" wx:for="{{group.articles}}" wx:for-item="item" wx:key="{{item.contentId}}" data-item="{{item}}" bindtap="showDetail">
         <view class="group-content-item-desc">
           {{item.title}}
         </view>

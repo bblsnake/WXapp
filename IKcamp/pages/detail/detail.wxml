@@ -1,2 +1,8 @@
 <!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
+<view>
+  <view class="wrapper">
+    <view class="header">{{item.title}}</view>
+    <view class="content"></view>
+  </view>
+  <view class="footer"></view>
+</view>

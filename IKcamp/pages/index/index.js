@@ -15,6 +15,16 @@ let handler = {
     articleList:[],//用来存放文章列表数据
     defaultImg: config.defaultImg
   },
+  showDetail: function(e){
+    console.log(e);
+    let dataset = e.currentTarget.dataset
+    let item = dataset && dataset.item
+    let contentId = item.contentId
+    // this.markRead(contentId)
+    wx.navigateTo({
+      url: `../detail/detail?contentId=${contentId}`,
+    });
+  },
   onLoad(){
     this.requestArticle()
   },
